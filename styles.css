@@ -1,19 +1,33 @@
+@font-face {
+  font-family: "Under-the-influence";
+  src: url("under-the-influence.ttf");
+}
+
+@font-face {
+  font-family: "Trashed Light";
+  src: url("Trashedlight-Regular.ttf");
+}
+
 body {
   background-color: black;
-  color: grey;
-  font-family: Calibri, sans-serif;
 }
 
 div {
-  width: 780px;
-  top: 30vh;
-  margin-left: auto;
-  margin-right: auto;
+  padding-top: 25vh;
   text-align: center;
 }
 
 h1 {
-  //font-size: 120%;
-  letter-spacing: 0.5em;
-  font-style: italic;
+  //margin-top: 64px;
+  font-family: "Under-the-influence", Calibri, sans-serif;
+  font-size: 48px;
+  letter-spacing: 0.4em;
+  color: lightgrey;
+  text-shadow: yellow 0 4px 10px;
+}
+
+h2 {
+  font-family: unispace, monospace;
+  font-size: 32px;
+  color: red;
 }
