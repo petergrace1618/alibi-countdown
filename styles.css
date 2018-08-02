@@ -1,0 +1,19 @@
+body {
+  background-color: black;
+  color: grey;
+  font-family: Calibri, sans-serif;
+}
+
+div {
+  width: 780px;
+  top: 30vh;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+h1 {
+  //font-size: 120%;
+  letter-spacing: 0.5em;
+  font-style: italic;
+}

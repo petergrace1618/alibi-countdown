@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<head>
+  <title>The Final Countdown</title>
+  <link href='styles.css' rel='stylesheet' type='text/css' />
+  <script src='jquery-3.3.1.min.js'></script>
+  <!--<script src='script.js'></script>-->
+</head>
+<body>
+  <div>
+    <h1>Tiki Pete's Final Countdown</h1>
+<!--    <p id='now'>Now: </p> -->
+    <h2 id='countdown'>
+      <span id="days"></span> days,
+      <span id="hours"></span> hours,
+      <span id="minutes"></span> minutes,
+      <span id="seconds"></span> seconds
+    </h2>
+  </div>
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+
+      update = function() {
+        var t1 = new Date();
+        var t2 = new Date(2018, 7, 6, 2, 30, 0);
+        var t = Math.floor((t2.getTime() - t1.getTime()) / 1000);
+        var s = t % 60;
+        t = Math.floor(t / 60);
+        var m = t % 60;
+        t = Math.floor(t / 60);
+        var h = t % 24;
+        t = Math.floor(t / 24);
+        //$('#now').text(t1.toDateString() +' '+ t1.toTimeString());
+        $('#days').text(t);
+        $('#hours').text(h);
+        $('#minutes').text(m);
+        $('#seconds').text(s);
+    }
+    update();
+    });
+  </script>
+</body>
