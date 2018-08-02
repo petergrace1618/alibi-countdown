@@ -3,7 +3,6 @@
   <title>Tiki Pete's Final Countdown</title>
   <link href='styles.css' rel='stylesheet' type='text/css' />
   <script src='jquery-3.3.1.min.js'></script>
-  <!--<script src='script.js'></script>-->
 </head>
 <body>
   <div>
@@ -29,13 +28,11 @@
         t = Math.floor(t / 60);
         var h = t % 24;
         t = Math.floor(t / 24);
-        //$('#now').text(t1.toDateString() +' '+ t1.toTimeString());
         $('#days').text(t);
         $('#hours').text(h);
         $('#minutes').text(m);
         $('#seconds').text(s);
     }, 1000);
-    //update();
 
     });
   </script>
