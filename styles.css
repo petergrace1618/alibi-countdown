@@ -8,6 +8,10 @@
   src: url("Trashedlight-Regular.ttf");
 }
 
+@font-face {
+  font-family: "Unispace";
+  src: url("unispace-italic.ttf");
+}
 body {
   background-color: black;
 }
@@ -18,7 +22,7 @@ div {
 }
 
 h1 {
-  font-family: "Under-the-influence", Calibri, sans-serif;
+  font-family: "Under-the-influence", cursive;
   font-size: 48px;
   letter-spacing: 0.4em;
   color: lightgrey;
@@ -26,7 +30,7 @@ h1 {
 }
 
 h2 {
-  font-family: unispace, monospace;
-  font-size: 32px;
+  font-family: "Unispace", monospace;
+  font-size: 40px;
   color: red;
 }
