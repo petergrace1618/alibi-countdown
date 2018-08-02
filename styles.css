@@ -1,27 +1,38 @@
 @font-face {
   font-family: "Under-the-influence";
-  src: url("under-the-influence.ttf");
+  src: url("fonts/under-the-influence.ttf");
 }
 
 @font-face {
   font-family: "Trashed Light";
-  src: url("Trashedlight-Regular.ttf");
+  src: url("fonts/Trashedlight-Regular.ttf");
 }
 
 @font-face {
   font-family: "Unispace";
-  src: url("unispace-italic.ttf");
+  src: url("fonts/unispace-italic.ttf");
 }
+
+@font-face{
+  font-family: "Army Rust";
+  src: url("fonts/ARMY RUST.ttf");
+}
+
+@font-face {
+  font-family: "CarbonType";
+  src: url("fonts/carbon.ttf")
+}
+
 body {
   background-color: black;
 }
 
-div {
+#countdown {
   padding-top: 25vh;
   text-align: center;
 }
 
-h1 {
+#countdown h1 {
   font-family: "Under-the-influence", cursive;
   font-size: 48px;
   letter-spacing: 0.4em;
@@ -29,8 +40,41 @@ h1 {
   text-shadow: yellow 0 4px 10px;
 }
 
-h2 {
+#countdown h2 {
+  padding-top: initial;
   font-family: "Unispace", monospace;
   font-size: 40px;
   color: red;
+}
+
+#rip {
+  //background-image: url("blank tombstone with background.jpg");
+  padding-top: 25vh;
+  color: grey;
+  text-align: center;
+  display: none;
+}
+
+#rip h1 {
+  font-family: "CarbonType", cursive;
+  font-size: 60px;
+  letter-spacing: 0.4em;
+  color: red;
+  text-shadow: grey 0 4px 4px;
+}
+
+#rip h2 {
+  font-family: "Under-the-influence", cursive;
+  font-size: 52px;
+  letter-spacing: 0.4em;
+  color: red;
+  text-shadow: grey 0 4px 4px;
+}
+
+#rip h3 {
+  font-family: "CarbonType", cursive;
+  font-size: 40px;
+  color: black;
+  letter-spacing: 0.4em;
+  text-shadow: white 0 0px 8px;
 }
