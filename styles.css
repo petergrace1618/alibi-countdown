@@ -24,7 +24,10 @@
 }
 
 body {
-  background: center / contain no-repeat black url('haunted-graveyard.jpg');
+  background-color: black;
+}
+
+body.rip {
 }
 
 #countdown {
@@ -49,6 +52,7 @@ body {
 
 #rip {
   //background-image: url('haunted-graveyard.jpg');
+  background: center / contain no-repeat black url('haunted-graveyard.jpg');
   padding-top: 25vh;
   padding-bottom: 25vh;
   color: grey;
