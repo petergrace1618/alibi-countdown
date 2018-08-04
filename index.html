@@ -8,6 +8,7 @@
   <div id='countdown'>
     <h1>Tiki Petes</h1>
     <h1>Final Countdown</h1>
+    <p id='debug'></p>
     <h2 id='countdown'>
       <span id="days"></span> :
       <span id="hours"></span> :
@@ -27,8 +28,9 @@
 
       update = setInterval(function() {
         var t1 = new Date().getTime();
-        var t2 = new Date(2018, 7, 4, 13, 57, 00).getTime();
-        if (t1 <= t2) {
+        var t2 = new Date(2018, 7, 4, 14, 14, 00).getTime();
+        $('#debug').text(t2);
+        if ((t2 - t1) > 1000) {
           var t = Math.floor((t2 - t1) / 1000);
           var s = t % 60;
           t = Math.floor(t / 60);
