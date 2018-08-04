@@ -24,7 +24,7 @@
 }
 
 body {
-  background-color: black;
+  background: center / contain no-repeat black url('haunted-graveyard.jpg');
 }
 
 #countdown {
@@ -48,11 +48,19 @@ body {
 }
 
 #rip {
-  //background-image: url("blank tombstone with background.jpg");
+  //background-image: url('haunted-graveyard.jpg');
   padding-top: 25vh;
+  padding-bottom: 25vh;
   color: grey;
   text-align: center;
   display: none;
+}
+
+#rip img {
+  width: 100vw;
+  position: absolute;
+  top: 0px;
+  left: 0px;
 }
 
 #rip h1 {
