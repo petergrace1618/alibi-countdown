@@ -5,11 +5,12 @@
   <script src='jquery-3.3.1.min.js'></script>
 </head>
 <body>
+  <h1 id='relive'><a>Click here to relive the moment</a></h1>
   <div id='countdown'>
     <h1>Tiki Petes</h1>
     <h1>Final Countdown</h1>
 <!--    <p id='debug'></p>-->
-    <h2 id='countdown'>
+    <h2>
       <span id="days"></span> :
       <span id="hours"></span> :
       <span id="minutes"></span> :
@@ -17,7 +18,6 @@
     </h2>
   </div>
   <div id='rip'>
-<!--    <img src='haunted-graveyard.jpg' alt='graveyard'/>-->
     <h1>R.I.P.</h1>
     <h2>Tiki Pete</h2>
     <h3>2017-2018</h3>
@@ -26,28 +26,28 @@
   <script type="text/javascript">
     $(document).ready(function() {
 
-      update = setInterval(function() {
-        var t1 = new Date().getTime();
-        var t2 = new Date(2018, 7, 6, 03, 30, 00).getTime();
-        //$('#debug').text(t2);
-        if ((t2 - t1) > 1000) {
-          var t = Math.floor((t2 - t1) / 1000);
-          var s = t % 60;
-          t = Math.floor(t / 60);
-          var m = t % 60;
-          t = Math.floor(t / 60);
-          var h = t % 24;
-          t = Math.floor(t / 24);
-          $('#days').text(t);
-          $('#hours').text(h);
-          $('#minutes').text(m);
-          $('#seconds').text(s);
-        } else {
-          clearInterval(update);
-          $('#countdown').toggle()
-          $('#rip').toggle();
-        }
-      }, 1000);
+      $('#relive').click(function() {
+        $('#countdown').toggle();
+        $('#rip').toggle();
+        $('#relive').toggle();
+        $('#days').text(0);
+        $('#hours').text(0);
+        $('#minutes').text(0);
+        $('#seconds').text(10);
+
+        update = setInterval(function() {
+          s = $('#seconds').text().valueOf() - 1;
+          if (s > 0) {
+            $('#seconds').text(s);
+          } else {
+            clearInterval(update);
+            $('#countdown').toggle();
+            $('#rip').toggle();
+            $('#relive').toggle();
+          }
+        }, 1000);
+
+      });
 
     });
   </script>
