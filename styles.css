@@ -24,16 +24,14 @@
 }
 
 body {
-  background-color: black;
+  background-color: #040404;
   color: grey;
-}
-
-body.rip {
 }
 
 #countdown {
   padding-top: 25vh;
   text-align: center;
+  display: none;
 }
 
 #countdown h1 {
@@ -57,7 +55,7 @@ body.rip {
   padding-bottom: 25vh;
   color: grey;
   text-align: center;
-  display: none;
+  //display: none;
 }
 
 #rip img {
@@ -89,4 +87,21 @@ body.rip {
   color: black;
   letter-spacing: 0.4em;
   text-shadow: white 0 0px 8px;
+}
+
+#relive {
+  text-align: center;
+  font-family: "Army Rust";
+  font-size: 2.5em;
+}
+
+a {
+  color: blue;
+  /* background-color: #222; */
+  text-shadow: 0 0 4px #CCC;
+}
+
+a:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
