@@ -52,7 +52,6 @@ body.rip {
 }
 
 #rip {
-  //background-image: url('haunted-graveyard.jpg');
   background: center / contain no-repeat black url('haunted-graveyard.jpg');
   padding-top: 25vh;
   padding-bottom: 25vh;
