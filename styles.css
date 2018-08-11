@@ -36,7 +36,7 @@ body {
 
 a {
   color: blue;
-  text-shadow: 0 0 3px #CCC;
+  text-shadow: 0 2px 1px #CCC;
 }
 
 a:hover {
@@ -96,4 +96,24 @@ a:hover {
   color: black;
   letter-spacing: 0.4em;
   text-shadow: white 0 0px 8px;
+}
+
+#credits {
+  /* display: none; */
+  text-align: center;
+  font-family: "Unispace";
+  padding: 2em 10vw;
+  /* padding-right: 10vw; */
+}
+
+#credits h1 {
+  text-shadow: 0px 2px yellow;
+}
+
+#credits p {
+  font-size: 1.5em;
+}
+
+#megan {
+  color: pink;
 }

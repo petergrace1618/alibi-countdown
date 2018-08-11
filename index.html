@@ -21,6 +21,11 @@
     <h2>Tiki Pete</h2>
     <h3>2017-2018</h3>
   </div>
+  <div id='credits'>
+    <h1>Thanks for the memories!</h1>
+    <p>Aaron, Adam, Ali, Andrea, Andrew, Brian, Brianna, Brook, Cameron, Chelsea, the other Chelsea, Crystal, Dani, Desi, Devin, Dove, Erica, Erin, Glenn, Isabel, Jaiden, Jenny, Joel, Josh, Joshua, Katherine, Kelly, Leighton, Marcus &amp; Warren, <span id='megan'>Megan</span>, Moses, Nikeisah, Nino, Noel, Paul, Rachel, Rob, Robbie, Rocky, Scott, Shannon, Siena, Steve, Stacey, Sunny, the other Sunny, Trusten, Warren, Xel, Yoni, Zoey
+    </p>
+  </div>
 
   <script type="text/javascript">
     $(document).ready(function() {
@@ -29,6 +34,7 @@
         $('#countdown').toggle();
         $('#rip').toggle();
         $('#relive').toggle();
+        $('#credits').hide();
         $('#days').text(0);
         $('#hours').text(0);
         $('#minutes').text(0);
@@ -43,6 +49,7 @@
             $('#countdown').toggle();
             $('#rip').toggle();
             $('#relive').toggle();
+            $('#credits').show();
           }
         }, 1000);
 
