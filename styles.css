@@ -28,6 +28,23 @@ body {
   color: grey;
 }
 
+#relive {
+  text-align: center;
+  font-family: "Army Rust";
+  font-size: 3em;
+}
+
+a {
+  color: blue;
+  /* background-color: #222; */
+  text-shadow: 0 0 4px #CCC;
+}
+
+a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 #countdown {
   padding-top: 25vh;
   text-align: center;
@@ -87,21 +104,4 @@ body {
   color: black;
   letter-spacing: 0.4em;
   text-shadow: white 0 0px 8px;
-}
-
-#relive {
-  text-align: center;
-  font-family: "Army Rust";
-  font-size: 2.5em;
-}
-
-a {
-  color: blue;
-  /* background-color: #222; */
-  text-shadow: 0 0 4px #CCC;
-}
-
-a:hover {
-  text-decoration: underline;
-  cursor: pointer;
 }
