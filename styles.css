@@ -30,14 +30,13 @@ body {
 
 #relive {
   text-align: center;
-  font-family: "Army Rust";
-  font-size: 3em;
+  font-family: "Unispace";
+  /* font-size: 3em; */
 }
 
 a {
   color: blue;
-  /* background-color: #222; */
-  text-shadow: 0 0 4px #CCC;
+  text-shadow: 0 0 3px #CCC;
 }
 
 a:hover {
@@ -68,18 +67,11 @@ a:hover {
 
 #rip {
   background: center / contain no-repeat black url('haunted-graveyard.jpg');
-  padding-top: 25vh;
-  padding-bottom: 25vh;
+  padding-top: 20vh;
+  padding-bottom: 20vh;
   color: grey;
   text-align: center;
   //display: none;
-}
-
-#rip img {
-  width: 100vw;
-  position: absolute;
-  top: 0px;
-  left: 0px;
 }
 
 #rip h1 {
