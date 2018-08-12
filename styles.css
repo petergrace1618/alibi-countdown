@@ -31,23 +31,23 @@ body {
 #relive {
   text-align: center;
   font-family: "Unispace";
-  font-size: 1.5em;
-}
-
-a {
-  color: blue;
+  font-size: 1.4em;
   text-shadow: 0 2px 1px #CCC;
 }
 
-a:hover {
+#relive a {
+  color: blue;
   text-decoration: underline;
+}
+
+#relive a:hover {
   cursor: pointer;
 }
 
 #countdown {
   padding-top: 25vh;
   text-align: center;
-  display: none;
+  /* display: none; */
 }
 
 #countdown h1 {
@@ -67,11 +67,11 @@ a:hover {
 
 #rip {
   background: center / contain no-repeat black url('haunted-graveyard.jpg');
-  padding-top: 20vh;
-  padding-bottom: 20vh;
+  padding-top: 2em;
+  padding-bottom: 2em;
   color: grey;
   text-align: center;
-  //display: none;
+  display: none;
 }
 
 #rip h1 {
@@ -99,15 +99,14 @@ a:hover {
 }
 
 #credits {
-  /* display: none; */
   text-align: center;
-  font-family: "Unispace";
+  font-family: "Unispace", monospace;
   padding: 2em 10vw;
-  /* padding-right: 10vw; */
+  display: none;
 }
 
 #credits h1 {
-  text-shadow: 0px 2px yellow;
+  text-shadow: 0px 2px red;
 }
 
 #credits p {

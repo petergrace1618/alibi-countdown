@@ -5,7 +5,8 @@
   <script src='jquery-3.3.1.min.js'></script>
 </head>
 <body>
-  <h1 id='relive'><a>Click here to relive the moment</a></h1>
+  <h1 id='relive'>Relive the moment!<br/>
+      <a>Click here</a></h1>
   <div id='countdown'>
     <h1>Tiki Petes</h1>
     <h1>Final Countdown</h1>
@@ -17,24 +18,26 @@
     </h2>
   </div>
   <div id='rip'>
-    <h1>R.I.P.</h1>
+    <h1>R I P</h1>
     <h2>Tiki Pete</h2>
     <h3>2017-2018</h3>
   </div>
   <div id='credits'>
     <h1>Thanks for the memories!</h1>
-    <p>Aaron, Adam, Ali, Andrea, Andrew, Brian, Brianna, Brook, Cameron, Chelsea, the other Chelsea, Crystal, Dani, Desi, Devin, Dove, Erica, Erin, Glenn, Isabel, Jaiden, Jenny, Joel, Josh, Joshua, Katherine, Kelly, Leighton, Marcus &amp; Warren, <span id='megan'>Megan</span>, Moses, Nikeisah, Nino, Noel, Paul, Rachel, Rob, Robbie, Rocky, Scott, Shannon, Siena, Steve, Stacey, Sunny, the other Sunny, Trusten, Warren, Xel, Yoni, Zoey
+    <p>
+      Aaron, Adam, Ali, Andrea, Andrew, Anthony, Bob, Brian, Brianna, Brook, Cameron, Chelsea, the other Chelsea, Crystal, Dani, Desi, Devin, Dove, Eric, Erica, Erin, Gary, Glenn, Isabel, Jackson, Jaiden, Jenny, Joel, Josh, Joshua, Kelly, Leighton, Marcus &amp; Warren, Mario, <span id='megan'>Megan</span>, Moses, Nikeisah, Nino, Noel, Paul, Rachel, Rafael, Rob, Robbie, Rocky, Rosy, Scott, Shannon, Shawn, Shelley, Siena, Sierra, Steve, Stacey, Sunny, the other Sunny, Trusten, Tuesday, Warren, Xel, Yoni, Zoey
     </p>
+    <p>And special thanks to Katherine McKinnon for telling me the Alibi was hiring.</p>
   </div>
 
   <script type="text/javascript">
     $(document).ready(function() {
 
       $('#relive a').click(function() {
-        $('#countdown').toggle();
-        $('#rip').toggle();
+        // $('#countdown').toggle();
+        // $('#rip').toggle();
         $('#relive').toggle();
-        $('#credits').hide();
+        // $('#credits').hide();
         $('#days').text(0);
         $('#hours').text(0);
         $('#minutes').text(0);
@@ -46,9 +49,9 @@
             $('#seconds').text(s);
           } else {
             clearInterval(update);
-            $('#countdown').toggle();
-            $('#rip').toggle();
-            $('#relive').toggle();
+            $('#countdown').hide();
+            $('#rip').show();
+            $('#relive').hide();
             $('#credits').show();
           }
         }, 1000);
