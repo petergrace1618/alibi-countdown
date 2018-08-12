@@ -31,7 +31,7 @@ body {
 #relive {
   text-align: center;
   font-family: "Unispace";
-  font-size: 1.4em;
+  font-size: 2em;
   text-shadow: 0 2px 1px #CCC;
 }
 
@@ -67,15 +67,15 @@ body {
 
 #rip {
   background: center / contain no-repeat black url('haunted-graveyard.jpg');
-  padding-top: 2em;
-  padding-bottom: 2em;
+  padding-top: 4em;
+  padding-bottom: 4em;
   color: grey;
   text-align: center;
   display: none;
 }
 
 #rip h1 {
-  font-family: "CarbonType", cursive;
+  font-family: "Under-the-influence", cursive;
   font-size: 60px;
   letter-spacing: 0.4em;
   color: red;
@@ -107,10 +107,6 @@ body {
 
 #credits h1 {
   text-shadow: 0px 2px red;
-}
-
-#credits p {
-  /* font-size: 1.5em; */
 }
 
 #megan {
